@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<script src="https://unpkg.com/vue@2"></script>
+<!--para acessar o indice atual é necessario colocar primeiro o valor que está pecorrendo cada um dos array
+e na segunda posição o indice associado, ex:(cor=elemento do array, i=indice ) -->
+<div id="app">
+    <ul>
+        <li v-for="(cor, i ) in cores">{{i + i}}) {{cor}} </li>
+       
+    </ul>
+   
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data:{
+           cores: ['vermelho', 'verde', 'amarelo', 'azul'],
+           nome: [
+            {nome:'Mônica', idade:27, peso: 52},
+            {nome:'Amanda', idade:22, peso: 57},
+            {nome:'Eliana', idade:45, peso: 105},
+            {nome:'Graça', idade:59, peso: 120},
+        
+           ]            
+        }
+    })
+</script>
+
+<style>
+    ul{
+        list-style: none;
+    }
+   
+</style>
