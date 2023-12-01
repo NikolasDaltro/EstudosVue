@@ -13,7 +13,7 @@
 <hr>
 <ul>
     <li v-for="pessoa in pessoas">
-            <div v-for="{valor, chave} in pessoa">
+             <div v-for="(valor, chave) in pessoa">
             {{chave}} = {{valor}}
         </div>
     </li>
